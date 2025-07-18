@@ -28,7 +28,7 @@ There are six folders. \
 &#10146; I chose BD_CSV_Set3 because they were more evenly distributed.\
 &#10146; This doesn’t have any disadvantage like introducing bias, because this is just to run multiple sets at the same time. The final brown dwarf analysis will be done as a whole.
 
-## Translations:
+## 3. Translations:
 &#10146; Every Translation file can be understood this way:
 `filepath = "path/filename.h5"
 df = pd.read_hdf(filename, key='Real2-B1')`
