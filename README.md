@@ -29,14 +29,18 @@ There are six folders. \
 &#10146; This doesn’t have any disadvantage like introducing bias, because this is just to run multiple sets at the same time. The final brown dwarf analysis will be done as a whole.
 
 ## 3. Translations:
-&#10146; Every Translation file can be understood this way:
-`filepath = "path/filename.h5"
-df = pd.read_hdf(filename, key='Real2-B1')`
+&#10146; Every Translation file can be understood this way:\
+`filepath = "path/filename.h5"`\
+`df = pd.read_hdf(filename, key='Real2-B1')`
 
-The key would be in the format: 
-`Real{realization_number}-{scenario}`
-Realization number mapping is mentioned above.
+The key would be in the format: \
+`Real{realization_number}-{scenario}`\
+Realization number mapping is mentioned above. 
 
+&#10146; The file `FINAL_RUN_search_info_output_6_Realizations.h5` has the search runs output information for all six realizations. We decided to discard `s433`, but I stored all of them just to be precautionary.
+
+## 4. Quantiles
+## 5. ???
 
 
 
