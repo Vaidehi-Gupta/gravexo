@@ -23,7 +23,12 @@ There are six folders. \
 &#10146; `total_search_exo.csv` : This is also from the same file as above, but with sources in the mass range 0 to 16 MJ. \
 &#10146; `total_search_bds.csv` : This is also from the same file as above, but with sources in the mass greater than 16 MJ. \
 &#10146;  `total_search_exo_det.csv` and  `total_search_bds_det.csv` : The result of search runs can’t really tell us about detectability, but this was an attempt to look at number with `logl_max_mcmc < -2`. These files are not really used much anywhere.
-### 2d. BD_CSV_Set_* : 
+### 2d. CSVs_exo_evidence :
+&#10146; `total_evidence_exo.csv` file has the number of sources across each scenario for all realizations, for which evidence calculations were done – this includes sure, marginal and non-detectable sources.\
+&#10146; `sure_evidence_exo.csv file` has the number of sources across each scenario for all realizations, with `2logBF > 5`.\
+&#10146; `marg_evidence_exo.csv` file has the number of sources across each scenario for all realizations, with `5 > 2logBF > 0`.\
+&#10146; `non_det_evidence_exo.csv` file has the number of sources across each scenario for all realizations, with `2logBF < 0`.
+### 2e. BD_CSV_Set_* : 
 &#10146; All these files were me checking how many brown dwarfs are in different mass ranges to finalize how to run brown dwarfs.\
 &#10146; I chose BD_CSV_Set3 because they were more evenly distributed.\
 &#10146; This doesn’t have any disadvantage like introducing bias, because this is just to run multiple sets at the same time. The final brown dwarf analysis will be done as a whole.
@@ -37,7 +42,9 @@ The key would be in the format: \
 `Real{realization_number}-{scenario}`\
 Realization number mapping is mentioned above. 
 
-&#10146; The file `FINAL_RUN_search_info_output_6_Realizations.h5` has the search runs output information for all six realizations. We decided to discard `s433`, but I stored all of them just to be precautionary.
+&#10146; The file `FINAL_RUN_search_info_output_6_Realizations.h5` has the search runs output information for all six realizations. We decided to discard `s433`, but I stored all of them just to be precautionary.\
+&#10146; The file `FINAL_RUN_evidence_exo_output_6_Realizations.h5` has the evidence runs output information for exoplanets for all six realizations.
+
 
 ## 4. Quantiles
 ## 5. ???
