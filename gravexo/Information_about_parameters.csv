@@ -1,0 +1,52 @@
+Parameter Name,Unit of Measure,From,Definition,Same as Something?
+2logBF,No unit.,EvidenceRuns,"Detectbility measure. 
+2logBF >5 is surely detectable
+0 < 2logBF < 5 is marginally detectable
+2logBF < 0 is non-detectable.","No, but can be calculated using 2*np.log(third_evidence/base_evidence)"
+A2,,Third-body waveform,Special amplitude parameter related to the line-of-site velocity for the third body orbit as defined in the paper https://arxiv.org/pdf/1806.00500,No.
+Amp,,Base waveform,Amplitude of the base (DWD) waveform.,No.
+Omega2,,Third-body waveform,One of three euler angles describing the third-body orbital frame rotation from the ecliptic frame. See the Figure 1 in `arXiv:1806.00500 <https://arxiv.org/pdf/1806.00500.pdf>`_.,No.
+P2,years,Third-body waveform,Orbital period of the third-body in years.,No.
+T2,years,Third-body waveform,Time of pericenter passage of the third body in Years.,No.
+base_evidence,No unit.,EvidenceRuns,Evidence value computed for the base template.,No. But used to compute 2logBF.
+beta,radian,Base waveform,Ecliptic latitude of the source given in radians.,Yes. Same as b_ecl.
+e2,No unit.,Third-body waveform,Orbital eccentricity of third body.,Yes. Same as e3.
+f0,Hz,Base waveform,Initial frequency of gravitational wave in Hz.,No.
+fddot,Hz/s^2,Base waveform,Initial double derivative of frequency of the GW.,No.
+fdot,Hz/s,Base waveform,Initial frequency derivative of GW.,No.
+i2,radian,Third-body waveform,Orbital inclination of third body in radians. This orbital inclination is one of the three euler angles describing the rotation of the third-body orbital frame to ecliptic frame.,Yes. Same as iota3.
+index,No unit.,,,No.
+iota,radian,Base waveform,Inclination of the Galactic binary orbit given in radians.,No. But it is arccos(cos_i).
+lam,radian,Base waveform,Ecliptic longitude of the source given in radians.,Yes. Same as l_ecl.
+lldiff_base_marg,No unit.,TripleRuns,Log likelihood of base and third-body waveform computed in TripleRuns at injection of third-body.,No.
+logl_max_mcmc,No unit.,SearchRuns,Maximized log likelihood of base and third-body waveform computed in SearchRuns using MCMC.,No.
+omega2,,Third-body waveform,One of three euler angles describing the third-body orbital frame rotation from the ecliptic frame. See the Figure 1 in `arXiv:1806.00500 <https://arxiv.org/pdf/1806.00500.pdf>`_.,No.
+omegabar,,Third-body waveform,Varpi. Special angular frequency parameter related to the line-of-site velocity for the third body orbit as defined in the paper https://arxiv.org/pdf/1806.00500,No.
+phase_shift_base,,TripleRuns,Phase change of base and third-body waveform computed in TripleRuns at injection of third-body.,No.
+phi0,radian,Base waveform,Initial phase angle of gravitational wave in radians.,No.
+phi2,radian,Third-body waveform,Orbital phase in radians.,Yes. Same as Phi3.
+psi,radian,Base waveform,Polarization angle of the Galactic binary orbit in radians.,No.
+snr,,TripleRuns,Signal to Noise Ratio,No.
+third_evidence,No unit.,EvidenceRuns,Evidence value computed for the third-body template.,No. But used to compute 2logBF.
+P,days.,DWD,Period of the inner binary in days.,No. But used to compute f0. f0 = 2/period where period = P*24*3600 (period in seconds).
+l_deg,,Nicola's realizations,Not sure. Never used.,No.
+b_deg,,Nicola's realizations,Not sure. Never used.,No.
+d_kpc,kilo parsec,Nicola's realizations,Luminosity distance in kilo parsecs.,No.
+wd1_mass,Solar Mass,Nicola's realizations,Mass of WD1 in units of Solar Mass.,No.
+wd1_rad,,Nicola's realizations,"Radius of WD1. Never used, hence, unsure about unit.",No.
+wd2_mass,Solar Mass,Nicola's realizations,Mass of WD2 in units of Solar Mass.,No.
+wd2_rad,,Nicola's realizations,"Radius of WD2. Never used, hence, unsure about unit.",No.
+age_yr,,Nicola's realizations,"Never used, hence, unsure about unit. But guessing from name, could be age of WD in year?",No.
+wd1_cool_time,,Nicola's realizations,"Never used, hence, unsure about unit. But guessing from name, could be cool time of WD1?",No.
+wd2_cool_time,,Nicola's realizations,"Never used, hence, unsure about unit. But guessing from name, could be cool time of WD2?",No.
+cos_i,No unit.,Nicola's realizations,Cosine of the inclination of the Galactic binary orbit.,No. But it is cos(iota).
+SeBa_id,No unit.,Nicola's realizations,SeBa id. Never used.,No.
+phi,,Nicola's realizations,"Never used, hence, unsure about what it is.",No.
+theta,,Nicola's realizations,"Never used, hence, unsure about what it is.",No.
+l_ecl,radian,Nicola's realizations,Ecliptic longitude of the source given in radians.,Yes. Same as lam.
+b_ecl,radian,Nicola's realizations,Ecliptic latitude of the source given in radians.,Yes. Same as beta.
+M3,Jupiter Mass,Nicola's realizations,Mass of third body in units of jupiter masses.,No.
+a3,Astronomical Unit (AU),Nicola's realizations,Semi-major axis in AU.,No.
+Phi3,radian,Nicola's realizations,Orbital phase in radians.,Yes. Same as phi2.
+iota3,radian,Nicola's realizations,Orbital inclination of third body in radians. This orbital inclination is one of the three euler angles describing the rotation of the third-body orbital frame to ecliptic frame.,Yes. Same as i2.
+e3,No unit.,Nicola's realizations,Orbital eccentricity of third body.,Yes. Same as e2.
